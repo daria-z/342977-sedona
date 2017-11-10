@@ -74,8 +74,22 @@
                  <button type="button" name="button-reservation">Поиск гостиницы в Седоне</button>
                </div>
                <div class="reservation-search-modal">
+                 <form class="reservation" action="https://echo.htmlacademy.ru" method="post">
+                   <p>
+                   <label for="reservation-check-in-date">Дата заезда</label>
+                   <input id="reservation-check-in-date" type="date" name="reservation" placeholder="24 апреля 2017">
+                   </p>
+                   <p>
+                   <label for="reservation-check-out-date">Дата заезда</label>
+                   <input id="reservation-check-out-date" type="date" name="reservation" placeholder="4 июля 2017">
+                   </p>
+
+
+                   <button type="submit" name="reservation-button">Найти</button>
+                 </form>
                  <!-- Здесь будет форма! -->
                  <img src="img/map.jpeg" alt="Карта">
+                 <button class="map-close" aria-label="закрыть карту">x</button>
                </div>
              </section>
          </main>
