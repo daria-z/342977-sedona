@@ -25,37 +25,46 @@
           <form class="filters" action="https://echo.htmlacademy.ru" method="get">
             <fieldset>
               <legend>Инфраструктура:</legend>
-
+              <p>
                 <input type="checkbox" name="pool" id="filters-pool" checked>
                 <label for="filters-pool">Бассейн</label>
-
+              </p>
+              <p>
                 <input type="checkbox" name="parking" id="filters-parking">
                 <label for="filters-parking">Парковка</label>
-
+              </p>
+              <p>
                 <input type="checkbox" name="wifi" id="filters-wifi">
                 <label for="filters-wifi">Wi-Fi</label>
-
+              </p>
             </fieldset>
             <fieldset>
               <legend>Тип жилья:</legend>
-
+              <p>
                 <input type="checkbox" name="hotel" id="filters-hotel" checked>
                 <label for="filters-hotel">Гостиница</label>
-
+              </p>
+              <p>
                 <input type="checkbox" name="motel" id="filters-motel" checked>
                 <label for="filters-motel">Мотель</label>
-
+              </p>
+              <p>
                 <input type="checkbox" name="apartments" id="filters-apartment" checked>
                 <label for="filters-apartment">Апартаменты</label>
+              </p>
             </fieldset>
             <fieldset>
               <legend>Стоимость в сутки (р):</legend>
+              <p>
                 <label for="filters-price-min">От</label>
                 <input id="filters-price-min" type="number" name="price-min" placeholder="0">
                 <label for="filters-price-max">До</label>
                 <input id="filters-price-max" type="number" name="price-max" placeholder="3000">
+              </p>
+              <p>
                 <button type="button" name="button-price-min"><img src="img/filter-button.svg" alt="уменьшить стоимость"></button>
                 <button type="button" name="button-price-max"><img src="img/filter-button.svg" alt="увеличить"></button>
+              </p>
             </fieldset>
             <button type="submit" name="filters-button">Показать</button>
           </form>
