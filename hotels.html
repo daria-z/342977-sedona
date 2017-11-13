@@ -61,10 +61,14 @@
                 <label for="filters-price-max">До</label>
                 <input id="filters-price-max" type="number" name="price-max" placeholder="3000">
               </p>
-              <p>
-                <button type="button" name="button-price-min"><img src="img/filter-button.svg" alt="уменьшить стоимость"></button>
-                <button type="button" name="button-price-max"><img src="img/filter-button.svg" alt="увеличить"></button>
-              </p>
+              <div class="range-box">
+                <div class="range-current">
+                  <div class="range-button-min" tabindex="0"><img src="img/filter-button.svg" alt="уменьшить стоимость"></div>
+                  <div class="range-button-max" tabindex="0"><img src="img/filter-button.svg" alt="увеличить стоимость"></div>
+                  <!-- <button type="button" name="range-button-min"><img src="img/filter-button.svg" alt="уменьшить стоимость"></button>
+                  <button type="button" name="range-button-max"><img src="img/filter-button.svg" alt="увеличить стоимость"></button> -->
+                </div>
+              </div>
             </fieldset>
             <button type="submit" name="filters-button">Показать</button>
           </form>
