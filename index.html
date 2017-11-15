@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Седона</title>
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
         <header class="main-header">
@@ -23,7 +25,7 @@
              <img src="img/welcome.jpg" width="" height="" alt="Welcome in the gorgeous Sedona «Because the Grand Canyon sucks»">
 
              <section class="reasons">
-                 <b>Седона - небольшой городок в аризоне, заслуживающий большего!</b>
+                 <b class="slogan">Седона - небольшой городок в аризоне, заслуживающий большего!</b>
                  <p>Рассмотрим пять причин, по которым Седона круче, чем Гранд Каньон!</p>
                  <ol class="reasons-list">
                      <li class="reasons-item">
@@ -69,35 +71,35 @@
              </section>
              <section class="reservation">
                <div class="reservation-search">
-                 <b>Заинтересовались?</b>
+                 <b class="question">Заинтересовались?</b>
                  <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-                 <button type="button" name="button-reservation">Поиск гостиницы в Седоне</button>
+                 <button class="button form-close" type="button" name="button-reservation">Поиск гостиницы в Седоне</button>
                </div>
                <div class="reservation-search-modal">
                  <form class="reservation" action="https://echo.htmlacademy.ru" method="get">
                    <p>
                      <label for="arrival-date">Дата заезда:</label>
                      <input type="date" name="arrival" id="arrival-date" placeholder="24 апреля 2017">
-                     <button type="button" name="arrival-calendar"><img src="img/calendar.svg" alt="выбор времени заезда"></button>
+                     <button class="button choice-button" type="button" name="arrival-calendar"><img src="img/calendar.svg" alt="выбор времени заезда"></button>
                    </p>
                    <p>
                      <label for="departure-date">Дата выезда:</label>
                      <input type="date" name="departure" id="departure-date" placeholder="4 июля 2017">
-                     <button type="button" name="departure-calendar"><img src="img/calendar.svg" alt="выбор времени выезда"></button>
+                     <button class="button choice-button" type="button" name="departure-calendar"><img src="img/calendar.svg" alt="выбор времени выезда"></button>
                    </p>
                    <p>
                      <label for="adults-quantity">Взрослые:</label>
-                     <button type="button" name="adults-add" aria-label="меньше на одного взрослого">-</button>
+                     <button class="button choice-button" type="button" name="adults-add" aria-label="меньше на одного взрослого">-</button>
                      <input type="number" name="adults" id="adults-quantity" placeholder="2" >
-                     <button type="button" name="adults-red" aria-label="больше на одного взрослого">+</button>
+                     <button class="button choice-button" type="button" name="adults-red" aria-label="больше на одного взрослого">+</button>
                    </p>
                    <p>
                      <label for="children-quantity">Дети:</label>
-                     <button type="button" name="children-add" aria-label="меньше на одного ребенка">-</button>
+                     <button class="button choice-button" type="button" name="children-add" aria-label="меньше на одного ребенка">-</button>
                      <input type="number" name="adults" id="children-quantity" placeholder="0" >
-                     <button type="button" name="children-red" aria-label="больше на одного ребенка">+</button>
+                     <button class="button choice-button" type="button" name="children-red" aria-label="больше на одного ребенка">+</button>
                    </p>
-                   <button type="submit" name="search-button">Найти</button>
+                   <button  class="button form-submit" type="submit" name="search-button">Найти</button>
                  </form>
                  <img src="img/map.jpg" alt="Карта">
                </div>
@@ -106,7 +108,7 @@
         <footer class="main-footer">
              <div class="footer-social">
                <b>#visitsedonia</b>
-               <ul>
+               <ul class="social-list">
                  <li><a class="social-button" href="#">Твиттер</a></li>
                  <li><a class="social-button" href="#">Фейсбук</a></li>
                  <li><a class="social-button" href="#">Ютьюб</a></li>

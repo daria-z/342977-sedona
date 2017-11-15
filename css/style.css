@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000
+
+  background-color: #ffffff;
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #000000;
+}
+
+.site-navigation:hover a,
+.site-navigation:focus a {
+  color: #81b3d2;
+}
+
+.slogan {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.reasons-list {
+  background-color: #eeeeee;
+}
+
+.reasons-item:nth-of-type(1),
+.reasons-item:nth-of-type(2)  {
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.reasons-item h3 {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.recommendations-list {
+  list-style: none;
+}
+
+.question {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.button {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+  border: none;
+}
+
+.form-close {
+  background-color: #766357;
+}
+
+.form-close:hover,
+.form-close:focus {
+  background-color: #604e43;
+}
+
+.form-close:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
+}
+
+.reservation input {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-align: left;
+  text-transform: uppercase;
+  vertical-align: middle;
+  border: none;
+
+  background-color: #f2f2f2;
+}
+
+.reservation input:hover {
+  background-color: #ebebeb;
+}
+
+.reservation input:focus {
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff;
+}
+
+.reservation label {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-align: left;
+  text-transform: uppercase;
+  vertical-align: middle;
+  border: none;
+}
+
+.button.choice-button {
+  color: #a9a9a9;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #f2f2f2
+}
+
+.button.choice-button:hover,
+.button.choice-button:focus {
+  color: #000000;
+}
+
+.button.choice-button:active {
+  color: #81b3d2;
+}
+
+.form-submit {
+  background-color: #81b3d2;
+}
+
+.form-submit:hover,
+.form-submit:focus {
+  background-color: #669ec0;
+}
+
+.form-submit:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+
+.main-footer {
+  background-color: rgba(254, 254, 254, 0.9);
+}
+
+.social-list {
+  list-style: none;
+
+}
+
+.academy-link {
+
+}
