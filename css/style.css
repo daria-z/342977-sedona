@@ -278,6 +278,15 @@ img.map {
   color: #000000;
 }
 
+.selection a:hover,
+.selection a:focus {
+  color: #81b3d2;
+}
+
+.selection a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .hotels-item {
   color: #333333;
 }
