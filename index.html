@@ -5,6 +5,7 @@
         <title>HTML Academy: Седона</title>
         <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
+        <link href="normalize.css" rel="stylesheet">
     </head>
     <body>
         <header class="main-header">
@@ -22,10 +23,10 @@
         </header>
         <main class="container">
              <h1 class="visually-hidden">Прекрасный город Седона</h1>
-             <img src="img/welcome.jpg" width="" height="" alt="Welcome in the gorgeous Sedona «Because the Grand Canyon sucks»">
+             <img class="welcome-sedona" src="img/welcome-text.png" width="" height="" alt="Welcome in the gorgeous Sedona «Because the Grand Canyon sucks»">
 
              <section class="reasons">
-                 <b class="slogan">Седона - небольшой городок в аризоне, заслуживающий большего!</b>
+                 <b class="selection">Седона - небольшой городок в аризоне, заслуживающий большего!</b>
                  <p>Рассмотрим пять причин, по которым Седона круче, чем Гранд Каньон!</p>
                  <ol class="reasons-list">
                      <li class="reasons-item">
@@ -56,14 +57,17 @@
                      <ul class="recommendations-list">
                          <li class="recommendations-item">
                              <h2>Жилье</h2>
+                             <img src="img/icon-1.svg" alt="дом">
                              <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                          </li>
                          <li class="recommendations-item">
                              <h2>Еда</h2>
+                             <img src="img/icon-2.svg" alt="подарок">
                              <p>Всегда заказывайте фирменный бургер, не разочаруетесь!</p>
                          </li>
                          <li class="recommendations-item">
                              <h2>Сувениры</h2>
+                             <img src="img/icon-3.svg" alt="бургер">
                              <p>Не только китайского, но и местного производства!</p>
                          </li>
                      </ul>
@@ -101,7 +105,7 @@
                    </p>
                    <button  class="button form-submit" type="submit" name="search-button">Найти</button>
                  </form>
-                 <img src="img/map.jpg" alt="Карта">
+                 <img class="map" src="img/map.png" alt="Карта">
                </div>
              </section>
          </main>
@@ -116,7 +120,7 @@
              </div>
              <p class="footer-copyright">
                <b>Vebsite by</b>
-               <a class="academy-link" href="https://htmlacademy.ru/"><img src="img/html-academy.svg" width="" height="" alt="HTML Academy"></a>
+               <a class="academy-link" href="https://htmlacademy.ru/"><img src="img/html-academy.svg" width="115px" height="41px" alt="HTML Academy"></a>
              </p>
         </footer>
      </body>

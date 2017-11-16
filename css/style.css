@@ -13,6 +13,14 @@ body {
   background-color: #ffffff;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 a {
   text-decoration: none;
 }
@@ -20,7 +28,7 @@ a {
 .main-navigation {
   font-size: 14px;
   line-height: 26px;
-  color: #000000
+  color: #000000;
 
   background-color: #ffffff;
 }
@@ -46,9 +54,17 @@ a {
   color: #766357;
 }
 
-.slogan {
+.container .welcome-sedona {
+  background-color: #2d4448;
+  background-image: url("img/welcome-background.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.selection {
   font-size: 21px;
   line-height: 26px;
+  font-weight: 700;
 }
 
 .reasons-list {
@@ -69,6 +85,7 @@ a {
 .recommendations-list {
   list-style: none;
 }
+
 
 .question {
   font-size: 30px;
@@ -161,6 +178,151 @@ a {
 .form-submit:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
+}
+
+img.map {
+  background-color: #eeeeee;
+}
+
+.filters {
+  font: inherit;
+  color: #ffffff;
+
+  background-color: #2d4448;
+  background-image: url("img/filter-welcome-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.filters-fieldset {
+  border: none;
+}
+
+.filters legend {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.filters input {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #ffffff;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  background-color: transparent;
+}
+
+.button.filters-button {
+  font: inherit;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  background-color: transparent;
+}
+
+.button.filters-button:hover,
+.button.filters-button:focus {
+
+  color: #2d4448;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  background-color: #ffffff;
+}
+
+.sorting p {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+}
+
+.sorting-list {
+  list-style: none;
+}
+
+.sorting-item a {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.3);
+
+  border-bottom: dotted;
+}
+
+.sorting-item a:hover,
+.sorting-item a:focus {
+  color: #81b3d2;
+}
+
+.sorting-item a:active {
+  color: #000000;
+}
+
+.sorting-item-current a {
+  color: #81b3d2;
+  border-bottom: none;
+}
+
+.hotels-list {
+  list-style: none;
+}
+
+.selection a {
+  color: #000000;
+}
+
+.hotels-item {
+  color: #333333;
+}
+
+a.button-details {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+
+  background-color: #81b3d2;
+}
+
+a.button-details:hover,
+a.button-details:focus {
+  background-color: #669ec0;
+}
+
+a.button-details:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+a.button-reservation {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+
+  background-color: #766357;
+}
+
+a.button-reservation:hover,
+a.button-reservation:focus {
+  background-color: #604e43;
+}
+
+a.button-reservation:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
+}
+
+.rating-numbers {
+  color: #666666;
+  background-color: #f2f2f2;
 }
 
 
