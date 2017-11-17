@@ -56,9 +56,10 @@ a {
 
 .container .welcome-sedona {
   background-color: #2d4448;
-  background-image: url("img/welcome-background.jpg");
+  background-image: url("../img/welcome-background.jpg");
   background-position: top center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .selection {
@@ -85,7 +86,6 @@ a {
 .recommendations-list {
   list-style: none;
 }
-
 
 .question {
   font-size: 30px;
@@ -185,11 +185,12 @@ img.map {
 }
 
 .filters {
+
   font: inherit;
   color: #ffffff;
 
   background-color: #2d4448;
-  background-image: url("img/filter-welcome-background.jpg");
+  background-image: url("../img/filter-welcome-background.jpg");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -341,7 +342,12 @@ a.button-reservation:active {
 
 .social-list {
   list-style: none;
+}
 
+.social-button {
+  font: inherit;
+  color: #ffffff;
+  background-color: #81b3d2;
 }
 
 .academy-link {
