@@ -54,13 +54,20 @@ a {
   color: #766357;
 }
 
-.container .welcome-sedona {
+.container div {
   background-color: #2d4448;
   background-image: url("../img/welcome-background.jpg");
   background-position: top center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 1200px 800px;
 }
+
+.welcome .welcome-sedona {
+  width: 458px;
+  height: 352px;
+
+}
+
 
 .selection {
   font-size: 21px;
