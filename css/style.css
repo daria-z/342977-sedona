@@ -54,7 +54,7 @@ a {
   color: #766357;
 }
 
-.container div {
+.container .welcome {
   background-color: #2d4448;
   background-image: url("../img/welcome-background.jpg");
   background-position: top center;
@@ -65,7 +65,6 @@ a {
 .welcome .welcome-sedona {
   width: 458px;
   height: 352px;
-
 }
 
 
