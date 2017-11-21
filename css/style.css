@@ -48,6 +48,8 @@ p {
 }
 
 .main-header-logo {
+  position: relative;
+  left: -50%;
   width: 138px;
   height: 70px;
   margin: 0;
@@ -367,7 +369,6 @@ img.map {
 
 /*фильтры в каталоге отелей*/
 .filters {
-
   font: inherit;
   color: #ffffff;
 
@@ -378,6 +379,7 @@ img.map {
 }
 
 .filters-fieldset {
+  
   border: none;
 }
 

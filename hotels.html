@@ -56,24 +56,27 @@
                 <label for="filters-apartment">Апартаменты</label>
               </p>
             </fieldset>
-            <fieldset class="filters-fieldset">
-              <legend>Стоимость в сутки (р):</legend>
-              <p>
-                <label for="filters-price-min">От</label>
-                <input id="filters-price-min" type="number" name="price-min" placeholder="0">
-                <label for="filters-price-max">До</label>
-                <input id="filters-price-max" type="number" name="price-max" placeholder="3000">
-              </p>
-              <div class="range-box">
-                <div class="range-current">
-                  <div class="range-button-min" tabindex="0"><img src="img/filter-button.svg" alt="уменьшить стоимость"></div>
-                  <div class="range-button-max" tabindex="0"><img src="img/filter-button.svg" alt="увеличить стоимость"></div>
-                  <!-- <button type="button" name="range-button-min"><img src="img/filter-button.svg" alt="уменьшить стоимость"></button>
-                  <button type="button" name="range-button-max"><img src="img/filter-button.svg" alt="увеличить стоимость"></button> -->
+            <div class="range">
+              <fieldset class="filters-fieldset">
+                <legend>Стоимость в сутки (р):</legend>
+                <p>
+                  <label for="filters-price-min">От</label>
+                  <input id="filters-price-min" type="number" name="price-min" placeholder="0">
+                  <label for="filters-price-max">До</label>
+                  <input id="filters-price-max" type="number" name="price-max" placeholder="3000">
+                </p>
+                <div class="range-box">
+                  <div class="range-current">
+                    <div class="range-button-min" tabindex="0"><img src="img/filter-button.svg" alt="уменьшить стоимость"></div>
+                    <div class="range-button-max" tabindex="0"><img src="img/filter-button.svg" alt="увеличить стоимость"></div>
+                    <!-- <button type="button" name="range-button-min"><img src="img/filter-button.svg" alt="уменьшить стоимость"></button>
+                    <button type="button" name="range-button-max"><img src="img/filter-button.svg" alt="увеличить стоимость"></button> -->
+                  </div>
                 </div>
-              </div>
-            </fieldset>
-            <button class="button filters-button" type="submit" name="filters-button">Показать</button>
+              </fieldset>
+              <button class="button filters-button" type="submit" name="filters-button">Показать</button>
+            </div>
+
           </form>
         </section>
 
@@ -142,17 +145,17 @@
 
       </main>
       <footer class="main-footer">
-           <div class="footer-social">
-             <b>#visitsedonia</b>
-             <ul class="social-list">
-               <li><a class="social-button" href="#">Твиттер</a></li>
-               <li><a class="social-button" href="#">Фейсбук</a></li>
-               <li><a class="social-button" href="#">Ютьюб</a></li>
-             </ul>
-           </div>
-           <p class="footer-copyright">
-             <b>Vebsite by</b>
-             <a class="academy-link" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/html-academy.svg" width="115" height="41" alt="HTML Academy"></a>
-           </p>
+        <div class="footer-hashtag"><b>#visitsedonia</b></div>
+        <div class="footer-social">
+          <ul class="social-list">
+            <li><a class="social-button" href="#">Твиттер</a></li>
+            <li><a class="social-button" href="#">Фейсбук</a></li>
+            <li><a class="social-button" href="#">Ютьюб</a></li>
+          </ul>
+        </div>
+        <div class="footer-copyright">
+          <b>Vebsite by</b>
+          <a class="academy-link" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/html-academy.svg" width="115px" height="41px" alt="HTML Academy"></a>
+        </div>
         </footer>
     </body>
