@@ -33,12 +33,15 @@ p {
 
 /*header*/
 .main-navigation {
+  position: relative;
   display: flex;
   width: 100%;
   height: 56px;
   margin: 0;
   padding-left: 6%;
   padding-right: 6%;
+
+  box-sizing: border-box;
 
   font-size: 14px;
   line-height: 26px;
@@ -48,10 +51,10 @@ p {
 }
 
 .main-header-logo {
-  position: relative;
-  left: -50%;
-  width: 138px;
-  height: 70px;
+  position: absolute;
+  left: 46%;
+  width: 8%;
+
   margin: 0;
   padding: 0;
 }
@@ -369,6 +372,7 @@ img.map {
 
 /*фильтры в каталоге отелей*/
 .filters {
+
   font: inherit;
   color: #ffffff;
 
@@ -379,7 +383,6 @@ img.map {
 }
 
 .filters-fieldset {
-  
   border: none;
 }
 
