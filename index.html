@@ -87,28 +87,30 @@
                </div>
                <div class="reservation-search-modal">
                  <form class="reservation-form" action="https://echo.htmlacademy.ru" method="get">
-                   <p>
-                     <label for="arrival-date">Дата заезда:</label>
-                     <input type="date" name="arrival" id="arrival-date" placeholder="24 апреля 2017">
-                     <button class="button choice-button" type="button" name="arrival-calendar"><img src="img/calendar.svg" alt="выбор времени заезда"></button>
-                   </p>
-                   <p>
-                     <label for="departure-date">Дата выезда:</label>
-                     <input type="date" name="departure" id="departure-date" placeholder="4 июля 2017">
-                     <button class="button choice-button" type="button" name="departure-calendar"><img src="img/calendar.svg" alt="выбор времени выезда"></button>
-                   </p>
-                   <p>
-                     <label for="adults-quantity">Взрослые:</label>
-                     <button class="button choice-button" type="button" name="adults-add" aria-label="меньше на одного взрослого">-</button>
-                     <input type="number" name="adults" id="adults-quantity" placeholder="2" >
-                     <button class="button choice-button" type="button" name="adults-red" aria-label="больше на одного взрослого">+</button>
-                   </p>
-                   <p>
-                     <label for="children-quantity">Дети:</label>
-                     <button class="button choice-button" type="button" name="children-add" aria-label="меньше на одного ребенка">-</button>
-                     <input type="number" name="adults" id="children-quantity" placeholder="0" >
-                     <button class="button choice-button" type="button" name="children-red" aria-label="больше на одного ребенка">+</button>
-                   </p>
+                   <div class="wrapper-form-fields">
+                     <p>
+                       <label for="arrival-date">Дата заезда:</label>
+                       <input type="date" name="arrival" id="arrival-date" placeholder="24 апреля 2017">
+                       <button class="button choice-button" type="button" name="arrival-calendar"><img src="img/calendar.svg" alt="выбор времени заезда"></button>
+                     </p>
+                     <p>
+                       <label for="departure-date">Дата выезда:</label>
+                       <input type="date" name="departure" id="departure-date" placeholder="4 июля 2017">
+                       <button class="button choice-button" type="button" name="departure-calendar"><img src="img/calendar.svg" alt="выбор времени выезда"></button>
+                     </p>
+                     <p>
+                       <label for="adults-quantity">Взрослые:</label>
+                       <button class="button choice-button" type="button" name="adults-add" aria-label="меньше на одного взрослого">-</button>
+                       <input type="number" name="adults" id="adults-quantity" placeholder="2" >
+                       <button class="button choice-button" type="button" name="adults-red" aria-label="больше на одного взрослого">+</button>
+                     </p>
+                     <p>
+                       <label for="children-quantity">Дети:</label>
+                       <button class="button choice-button" type="button" name="children-add" aria-label="меньше на одного ребенка">-</button>
+                       <input type="number" name="adults" id="children-quantity" placeholder="0" >
+                       <button class="button choice-button" type="button" name="children-red" aria-label="больше на одного ребенка">+</button>
+                     </p>
+                   </div>
                    <button  class="button form-submit" type="submit" name="search-button">Найти</button>
                  </form>
                  <img class="map" src="img/map.png" width="" height="" alt="Карта">

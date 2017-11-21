@@ -218,9 +218,10 @@ p {
   flex-direction: column;
   align-items: center;
   width: auto;
-  height: 290px;
+  height: 245px;
   margin: 0;
   padding: 0;
+  padding-top: 55px;
 
 }
 
@@ -254,6 +255,7 @@ p {
 .form-close {
   width: 568px;
   height: 86px;
+
   background-color: #766357;
 }
 
@@ -280,6 +282,13 @@ p {
 
   margin: 0 auto;
 }
+
+.wrapper-form-fields {
+  width: 458px;
+  height: 173px;
+  margin: 55px;
+}
+
 
 .reservation input {
   font-size: 14px;
@@ -352,7 +361,7 @@ p {
 
 img.map {
   width: 100%;
-  
+
   background-color: #eeeeee;
 }
 
@@ -523,7 +532,7 @@ a.button-reservation:active {
 
 .main-footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   background-color: rgba(254, 254, 254, 0.9);
 }
 
