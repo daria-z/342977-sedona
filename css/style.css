@@ -410,8 +410,10 @@ img.map {
 /*фильтры в каталоге отелей*/
 .filters {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+
   flex-grow: 1;
+  height: 217px;
 
   font: inherit;
   color: #ffffff;
@@ -423,15 +425,29 @@ img.map {
 }
 
 .filters-fieldset {
-  width: 241px;
+  flex-basis: 241px;
   margin: 0;
+  margin-top: auto;
+  margin-bottom: auto;
   padding: 0;
+  text-align: left;
   border: none;
 }
 
+.filters-fieldset.infrastructure {
+  margin-left: 6%;
+}
 
+.range {
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 6%;
+
+}
 
 .filters legend {
+  margin: 0;
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
@@ -528,6 +544,9 @@ img.map {
   border-bottom: none;
 }
 
+.sorting-arrows {
+  margin-left: auto;
+}
 /*выделение жирным и крупным у текста*/
 
 .selection a {
@@ -554,7 +573,7 @@ img.map {
 
 .hotels-item {
   display: flex;
-
+  justify-content: flex-start;
 
   padding: 31px 6%;
   width: 100%;
@@ -583,6 +602,10 @@ img.map {
 
 }
 
+.hotels-raiting {
+  margin-left: auto;
+}
+
 
 
 
@@ -600,7 +623,7 @@ a.button-details {
   text-align: center;
   color: #ffffff;
   background-color: #81b3d2;
-  
+
 
 
 }
