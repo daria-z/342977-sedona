@@ -145,38 +145,72 @@ p {
   margin: 0;
   padding: 0;
   background-color: #eeeeee;
+  justify-content: space-between;
 }
 
-.reasons-list img {
-  flex-grow: 1;
-  width: auto;
-  /*height: 256px;*/
-  background-position: top center;
-  background-repeat: no-repeat;
+.reasons-list .reasons-item:nth-child(1) {
+  order: 1;
+}
+
+.reasons-list .reasons-item:nth-child(2) {
+  order: 3;
+}
+
+.reasons-list .reasons-item:nth-child(3) {
+  order: 4;
+}
+
+.reasons-list .reasons-item:nth-child(4) {
+  order: 5;
+}
+
+.reasons-list .reasons-item:nth-child(5) {
+  order: 6;
+}
+
+.reasons-list .recommendations:nth-child(6) {
+  order: 2;
 }
 
 .reasons-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-
   width: 33%;
+  height: 256px;
+}
+
+.reasons-item:nth-of-type(1),
+.reasons-item:nth-of-type(2) {
+  display: flex;
+  width: 100%;
   height: 256px;
   margin: 0;
 }
 
-.reasons-item:nth-of-type(1),
-.reasons-item:nth-of-type(4)  {
+.reasons-text:nth-of-type(1),
+.reasons-text:nth-of-type(2) {
+  width: 33%;
   color: #ffffff;
   background-color: #81b3d2;
 }
 
+.reasons-image:first-of-type {
+  width: 67%;
+  background-image: url(../img/reasons-item-2.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.reasons-image:last-of-type {
+  width: 67%;
+  background-image: url(../img/reasons-item-1.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .reasons-item h3 {
   margin: 0;
-  margin-top: 45px;
-  margin-bottom: 65px;
+  margin: 45px auto 65px;
   width: 155px;
   font-size: 21px;
   line-height: 21px;
@@ -184,7 +218,7 @@ p {
 
 .reasons-item p {
   width: 280px;
-  margin-bottom: 60px;
+  margin: 0 auto 60px;
 }
 
 .recommendations-list {
@@ -198,10 +232,13 @@ p {
 .recommendations-item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  width: 33%;
+  width: 33.3%;
   height: 330px;
+  padding: 55px 60px 85px;
+  box-sizing: border-box;
+  background-color: #ffffff;
 
 }
 
@@ -209,9 +246,9 @@ p {
   order: -1;
 }
 
-.recommendations-item p {
+/*.recommendations-item p {
   width: 280px;
-}
+}*/
 
 .question {
   font-size: 30px;
@@ -372,6 +409,9 @@ img.map {
 
 /*фильтры в каталоге отелей*/
 .filters {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
 
   font: inherit;
   color: #ffffff;
@@ -383,8 +423,13 @@ img.map {
 }
 
 .filters-fieldset {
+  width: 241px;
+  margin: 0;
+  padding: 0;
   border: none;
 }
+
+
 
 .filters legend {
   font-size: 16px;
@@ -402,6 +447,7 @@ img.map {
   border-radius: 2px;
   background-color: transparent;
 }
+
 
 .button.filters-button {
   font: inherit;
@@ -426,7 +472,23 @@ img.map {
 
 /*сортировка в каталоге отелей*/
 
+.sorting {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  padding: 30px 6%;
+  width: 100%;
+  height: 87px;
+  border-bottom: 1px solid #e5e5e5;
+  box-sizing: border-box;
+}
+
+.sorting .selection {
+  margin-right: 45px;
+}
+
 .sorting p {
+  margin-right: 38px;
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
@@ -434,6 +496,12 @@ img.map {
 }
 
 .sorting-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 240px;
+
   list-style: none;
 }
 
@@ -443,7 +511,7 @@ img.map {
   font-weight: 400;
   color: rgba(0, 0, 0, 0.3);
 
-  border-bottom: dotted;
+  border-bottom: 1px dotted;
 }
 
 .sorting-item a:hover,
@@ -478,22 +546,63 @@ img.map {
 /*карточка отеля*/
 
 .hotels-list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
 .hotels-item {
+  display: flex;
+
+
+  padding: 31px 6%;
+  width: 100%;
+  height: 165px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #e5e5e5;
+
   color: #333333;
 }
+
+.hotels-item img {
+  margin-right: 30px;
+}
+
+.hotels-item .selection {
+  margin: -5px 0 15px;
+  padding: 0;
+}
+
+.short-description {
+  margin-bottom: 18px;
+}
+
+.hotels-text {
+  text-align: left;
+
+}
+
+
+
+
 
 /*кнопки в карточке отеля*/
 
 a.button-details {
+  display: inline-block;
+  width: 110px;
+  height: 27px;
+
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
+  text-align: center;
   color: #ffffff;
-
   background-color: #81b3d2;
+  
+
+
 }
 
 a.button-details:hover,
@@ -507,9 +616,13 @@ a.button-details:active {
 }
 
 a.button-reservation {
+  display: inline-block;
+  width: 142px;
+  height: 27px;
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
+  text-align: center;
   color: #ffffff;
 
   background-color: #766357;
@@ -542,7 +655,7 @@ a.button-reservation:active {
 }
 
 .main-footer div {
-  width: 33%;
+  width: 33.3%;
   height: 120px;
 }
 

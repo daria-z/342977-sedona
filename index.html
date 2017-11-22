@@ -32,18 +32,20 @@
                  <p class="subhead">Рассмотрим пять причин, по которым Седона круче, чем Гранд Каньон!</p>
                  <ol class="reasons-list">
                      <li class="reasons-item">
-                         <h3>Настоящий городок</h3>
-                         <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
-                     </li>
-                     <li>
-                       <img src="img/reasons-item-1.jpg" width="800" height="401" alt="Настоящий городок">
-                     </li>
-                     <li>
-                       <img src="img/reasons-item-2.jpg" width="800" height="400" alt="Мост дьявола">
+                         <div class="reasons-text">
+                           <h3>Настоящий городок</h3>
+                           <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+                         </div>
+                         <div class="reasons-image"></div>
+                         <!--<img src="img/reasons-item-1.jpg" width="800" height="401" alt="Настоящий городок">-->
                      </li>
                      <li class="reasons-item">
-                         <h3>Там есть мост дьявола</h3>
-                         <p>Да, по нему сложно пройти если конечно вы осмелитесь</p>
+                       <div class="reasons-image"></div>
+                         <!--<img src="img/reasons-item-2.jpg" width="800" height="400" alt="Мост дьявола">-->
+                        <div class="reasons-text">
+                          <h3>Там есть мост дьявола</h3>
+                          <p>Да, по нему сложно пройти если конечно вы осмелитесь</p>
+                        </div>
                       </li>
                      <li class="reasons-item">
                          <h3>Небольшая площадь</h3>
@@ -57,27 +59,28 @@
                          <h3>Мало туристов</h3>
                          <p>Большинство едет в Гранд Каньон и толпится там</p>
                      </li>
+                     <li class="recommendations">
+                           <h3 class="visually-hidden">Рекоммендации при посещении Седоны</h3>
+                           <ul class="recommendations-list">
+                               <li class="recommendations-item">
+                                   <h2>Жилье</h2>
+                                   <img src="img/icon-1.svg" alt="дом">
+                                   <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                               </li>
+                               <li class="recommendations-item">
+                                   <h2>Еда</h2>
+                                   <img src="img/icon-3.svg" alt="бургер">
+                                   <p>Всегда заказывайте фирменный бургер, не разочаруетесь!</p>
+                               </li>
+                               <li class="recommendations-item">
+                                   <h2>Сувениры</h2>
+                                   <img src="img/icon-2.svg" alt="подарок">
+                                   <p>Не только китайского, но и местного производства!</p>
+                               </li>
+                           </ul>
+                     </li>
                  </ol>
-                 <section class="recommendations">
-                     <h3 class="visually-hidden">Рекоммендации при посещении Седоны</h3>
-                     <ul class="recommendations-list">
-                         <li class="recommendations-item">
-                             <h2>Жилье</h2>
-                             <img src="img/icon-1.svg" alt="дом">
-                             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-                         </li>
-                         <li class="recommendations-item">
-                             <h2>Еда</h2>
-                             <img src="img/icon-2.svg" alt="подарок">
-                             <p>Всегда заказывайте фирменный бургер, не разочаруетесь!</p>
-                         </li>
-                         <li class="recommendations-item">
-                             <h2>Сувениры</h2>
-                             <img src="img/icon-3.svg" alt="бургер">
-                             <p>Не только китайского, но и местного производства!</p>
-                         </li>
-                     </ul>
-                 </section>
+
              </section>
              <section class="reservation">
                <div class="reservation-search">
@@ -87,30 +90,28 @@
                </div>
                <div class="reservation-search-modal">
                  <form class="reservation-form" action="https://echo.htmlacademy.ru" method="get">
-                   <div class="wrapper-form-fields">
-                     <p>
-                       <label for="arrival-date">Дата заезда:</label>
-                       <input type="date" name="arrival" id="arrival-date" placeholder="24 апреля 2017">
-                       <button class="button choice-button" type="button" name="arrival-calendar"><img src="img/calendar.svg" alt="выбор времени заезда"></button>
-                     </p>
-                     <p>
-                       <label for="departure-date">Дата выезда:</label>
-                       <input type="date" name="departure" id="departure-date" placeholder="4 июля 2017">
-                       <button class="button choice-button" type="button" name="departure-calendar"><img src="img/calendar.svg" alt="выбор времени выезда"></button>
-                     </p>
-                     <p>
-                       <label for="adults-quantity">Взрослые:</label>
-                       <button class="button choice-button" type="button" name="adults-add" aria-label="меньше на одного взрослого">-</button>
-                       <input type="number" name="adults" id="adults-quantity" placeholder="2" >
-                       <button class="button choice-button" type="button" name="adults-red" aria-label="больше на одного взрослого">+</button>
-                     </p>
-                     <p>
-                       <label for="children-quantity">Дети:</label>
-                       <button class="button choice-button" type="button" name="children-add" aria-label="меньше на одного ребенка">-</button>
-                       <input type="number" name="adults" id="children-quantity" placeholder="0" >
-                       <button class="button choice-button" type="button" name="children-red" aria-label="больше на одного ребенка">+</button>
-                     </p>
-                   </div>
+                   <p>
+                     <label for="arrival-date">Дата заезда:</label>
+                     <input type="date" name="arrival" id="arrival-date" placeholder="24 апреля 2017">
+                     <button class="button choice-button" type="button" name="arrival-calendar"><img src="img/calendar.svg" alt="выбор времени заезда"></button>
+                   </p>
+                   <p>
+                     <label for="departure-date">Дата выезда:</label>
+                     <input type="date" name="departure" id="departure-date" placeholder="4 июля 2017">
+                     <button class="button choice-button" type="button" name="departure-calendar"><img src="img/calendar.svg" alt="выбор времени выезда"></button>
+                   </p>
+                   <p>
+                     <label for="adults-quantity">Взрослые:</label>
+                     <button class="button choice-button" type="button" name="adults-add" aria-label="меньше на одного взрослого">-</button>
+                     <input type="number" name="adults" id="adults-quantity" placeholder="2" >
+                     <button class="button choice-button" type="button" name="adults-red" aria-label="больше на одного взрослого">+</button>
+                   </p>
+                   <p>
+                     <label for="children-quantity">Дети:</label>
+                     <button class="button choice-button" type="button" name="children-add" aria-label="меньше на одного ребенка">-</button>
+                     <input type="number" name="adults" id="children-quantity" placeholder="0" >
+                     <button class="button choice-button" type="button" name="children-red" aria-label="больше на одного ребенка">+</button>
+                   </p>
                    <button  class="button form-submit" type="submit" name="search-button">Найти</button>
                  </form>
                  <img class="map" src="img/map.png" width="" height="" alt="Карта">
