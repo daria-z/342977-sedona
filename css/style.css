@@ -2,7 +2,6 @@ body {
   width: 1200px;
   margin: 0 auto;
   padding: 0;
-
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -10,7 +9,6 @@ body {
   color: #333333;
   text-align: center;
   text-transform: uppercase;
-
   background-color: #ffffff;
 }
 
@@ -40,13 +38,10 @@ p {
   margin: 0;
   padding-left: 6%;
   padding-right: 6%;
-
   box-sizing: border-box;
-
   font-size: 14px;
   line-height: 26px;
   color: #000000;
-
   background-color: #ffffff;
 }
 
@@ -54,7 +49,6 @@ p {
   position: absolute;
   left: 46%;
   width: 8%;
-
   margin: 0;
   padding: 0;
 }
@@ -63,11 +57,8 @@ p {
   display: flex;
   justify-content: space-between;
   width: 100%;
-
-
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
@@ -104,13 +95,10 @@ p {
   text-align: right;
 }
 
-
 /*основной блок на главной*/
-
 .container .welcome {
   width: 100%;
   margin-bottom: 45px;
-
   background-color: #2d4448;
   background-image: url("../img/welcome-background.jpg");
   background-position: top center;
@@ -239,16 +227,11 @@ p {
   padding: 55px 60px 85px;
   box-sizing: border-box;
   background-color: #ffffff;
-
 }
 
 .recommendations-item img {
   order: -1;
 }
-
-/*.recommendations-item p {
-  width: 280px;
-}*/
 
 .question {
   font-size: 30px;
@@ -264,7 +247,6 @@ p {
   margin: 0;
   padding: 0;
   padding-top: 55px;
-
 }
 
 .reservation-search .question {
@@ -278,7 +260,6 @@ p {
 }
 
 /*стиль для кнопок сайта*/
-
 .button {
   margin: 0;
   padding: 0;
@@ -293,11 +274,9 @@ p {
 }
 
 /*кнопка закрытия/открытия формы на главной странице*/
-
 .form-close {
   width: 568px;
   height: 86px;
-
   background-color: #766357;
 }
 
@@ -320,8 +299,6 @@ p {
   flex-wrap: wrap;
   width: 568px;
   height: 395px;
-
-
   margin: 0 auto;
 }
 
@@ -382,7 +359,6 @@ p {
 }
 
 /*кнопка отправки формы на главной*/
-
 .form-submit {
   width: 458px;
   height: 58px;
@@ -403,7 +379,6 @@ p {
 
 img.map {
   width: 100%;
-
   background-color: #eeeeee;
 }
 
@@ -411,13 +386,10 @@ img.map {
 .filters {
   display: flex;
   justify-content: flex-start;
-
   flex-grow: 1;
   height: 217px;
-
   font: inherit;
   color: #ffffff;
-
   background-color: #2d4448;
   background-image: url("../img/filter-welcome-background.jpg");
   background-position: center;
@@ -443,7 +415,6 @@ img.map {
   margin-top: auto;
   margin-bottom: auto;
   margin-right: 6%;
-
 }
 
 .filters legend {
@@ -458,19 +429,16 @@ img.map {
   line-height: 21px;
   font-weight: 400;
   color: #ffffff;
-
   border: 2px solid #ffffff;
   border-radius: 2px;
   background-color: transparent;
 }
-
 
 .button.filters-button {
   font: inherit;
   color: #ffffff;
   text-align: center;
   vertical-align: middle;
-
   border: 2px solid #ffffff;
   border-radius: 2px;
   background-color: transparent;
@@ -478,16 +446,13 @@ img.map {
 
 .button.filters-button:hover,
 .button.filters-button:focus {
-
   color: #2d4448;
-
   border: 2px solid #ffffff;
   border-radius: 2px;
   background-color: #ffffff;
 }
 
 /*сортировка в каталоге отелей*/
-
 .sorting {
   display: flex;
   justify-content: flex-start;
@@ -526,17 +491,18 @@ img.map {
   line-height: 18px;
   font-weight: 400;
   color: rgba(0, 0, 0, 0.3);
-
-  border-bottom: 1px dotted;
+  border-bottom: 1px rgba(0, 0, 0, 0.3) dotted;
 }
 
 .sorting-item a:hover,
 .sorting-item a:focus {
   color: #81b3d2;
+  border-bottom: 1px #81b3d2 dotted;
 }
 
 .sorting-item a:active {
   color: #000000;
+  border-bottom: 1px #000000 dotted;
 }
 
 .sorting-item-current a {
@@ -547,8 +513,8 @@ img.map {
 .sorting-arrows {
   margin-left: auto;
 }
-/*выделение жирным и крупным у текста*/
 
+/*выделение жирным и крупным у текста*/
 .selection a {
   color: #000000;
 }
@@ -563,28 +529,24 @@ img.map {
 }
 
 /*карточка отеля*/
-
 .hotels-list {
   margin: 0;
   padding: 0;
-
   list-style: none;
 }
 
 .hotels-item {
   display: flex;
   justify-content: flex-start;
-
-  padding: 31px 6%;
+  padding: 30px 6%;
   width: 100%;
   height: 165px;
   box-sizing: border-box;
   border-bottom: 1px solid #e5e5e5;
-
   color: #333333;
 }
 
-.hotels-item img {
+.hotels-item .hotels-photo {
   margin-right: 30px;
 }
 
@@ -594,38 +556,34 @@ img.map {
 }
 
 .short-description {
-  margin-bottom: 18px;
+  margin-bottom: 20px;
 }
 
 .hotels-text {
   text-align: left;
-
 }
 
 .hotels-raiting {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-left: auto;
+  text-align: right;
 }
 
-
-
-
-
 /*кнопки в карточке отеля*/
-
 a.button-details {
   display: inline-block;
   width: 110px;
   height: 27px;
-
+  padding-top: 3px;
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
   text-align: center;
   color: #ffffff;
   background-color: #81b3d2;
-
-
-
+  box-sizing: border-box;
 }
 
 a.button-details:hover,
@@ -642,13 +600,14 @@ a.button-reservation {
   display: inline-block;
   width: 142px;
   height: 27px;
+  padding-top: 3px;
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
   text-align: center;
   color: #ffffff;
-
   background-color: #766357;
+  box-sizing: border-box;
 }
 
 a.button-reservation:hover,
@@ -662,10 +621,18 @@ a.button-reservation:active {
 }
 
 /*рейтинг отеля*/
-
 .rating-numbers {
+  width: 110px;
+  height: 27px;
+  padding-top: 3px;
   color: #666666;
+  text-align: center;
   background-color: #f2f2f2;
+  box-sizing: border-box;
+}
+
+.rating-stars img {
+  margin-left: 3px;
 }
 
 
@@ -692,8 +659,4 @@ a.button-reservation:active {
   font: inherit;
   color: #ffffff;
   background-color: #81b3d2;
-}
-
-.academy-link {
-
 }
