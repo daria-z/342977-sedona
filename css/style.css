@@ -1,4 +1,5 @@
 body {
+  position: relative;
   width: 1200px;
   margin: 0 auto;
   padding: 0;
@@ -24,10 +25,7 @@ a {
   text-decoration: none;
 }
 
-p {
-  margin: 0;
-  padding: 0;
-}
+
 
 /*header*/
 .main-navigation {
@@ -38,11 +36,12 @@ p {
   margin: 0;
   padding-left: 6%;
   padding-right: 6%;
-  box-sizing: border-box;
   font-size: 14px;
   line-height: 26px;
+  font-weight: 700;
   color: #000000;
   background-color: #ffffff;
+  box-sizing: border-box;
 }
 
 .main-header-logo {
@@ -59,6 +58,7 @@ p {
   width: 100%;
   margin: 0;
   padding: 0;
+  padding-top: 15px;
   list-style: none;
 }
 
@@ -291,8 +291,14 @@ p {
 }
 
 /*форма на главной*/
+.reservation-search-modal {
+  display: flex;
+  justify-content: center;
+}
 
-.reservation-form {
+.reservation-search-modal .reservation-form {
+  position: absolute;
+  z-index: 3;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -300,16 +306,43 @@ p {
   width: 568px;
   height: 395px;
   margin: 0 auto;
+  background-color: #ffffff;
 }
 
-.wrapper-form-fields {
-  width: 458px;
-  height: 173px;
+.reservation-form .wrapper-form  {
+  display: flex;
+  flex-direction: column;
   margin: 55px;
+  justify-content: space-between;
+  min-width: 460px;
+  min-height: 173px;
+  align-items: flex-start;
 }
 
 
-.reservation input {
+
+ .reservation-form .arrival {
+   display: flex;
+   margin: 0;
+   padding: 0;
+ }
+
+ .reservation-form .departure {
+   margin: 0;
+   padding: 0;
+ }
+
+ .reservation-form .adults {
+   margin: 0;
+   padding: 0;
+ }
+
+ .reservation-form .children {
+   margin: 0;
+   padding: 0;
+ }
+
+.reservation-form input {
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
@@ -322,16 +355,16 @@ p {
   background-color: #f2f2f2;
 }
 
-.reservation input:hover {
+.reservation-form input:hover {
   background-color: #ebebeb;
 }
 
-.reservation input:focus {
+.reservation-form input:focus {
   border: 2px solid #e5e5e5;
   background-color: #ffffff;
 }
 
-.reservation label {
+.reservation-form label {
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
@@ -378,7 +411,9 @@ p {
 /*карта на главной*/
 
 img.map {
-  width: 100%;
+  position: relative;
+  z-index: 1;
+
   background-color: #eeeeee;
 }
 
@@ -640,24 +675,67 @@ a.button-reservation:active {
 /*footer*/
 
 .main-footer {
+  position: absolute;
+  z-index: 5;
+  bottom: 0px;
   display: flex;
-  justify-content: space-between;
-  background-color: rgba(254, 254, 254, 0.9);
+  justify-content: space-around;
+  align-items: center;
+  width: inherit;
+  min-height: 120px;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
-.main-footer div {
+.main-footer .footer-block {
   width: 33.3%;
-  height: 120px;
+
+}
+
+.footer-hashtag {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
 }
 
 .social-list {
   display: flex;
   justify-content: center;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
 .social-button {
+  display: inline-block;
+
+  width: 46px;
+  height: 48px;
+  vertical-align: middle;
+  background-color: #81b3d2;
   font: inherit;
   color: #ffffff;
   background-color: #81b3d2;
+}
+
+.social-tw {
+  margin-right: 6px;
+  background-image: url("../img/twitter.svg");
+  background-repeat: no-repeat;
+  background-size: 17px 15px;
+  background-position: center;
+}
+
+.social-fb {
+  margin-right: 6px;
+  background-image: url("../img/facebook.svg");
+  background-repeat: no-repeat;
+  background-size: 12px 22px;
+  background-position: center;
+}
+
+.social-ytb {
+  background-image: url("../img/youtube.svg");
+  background-repeat: no-repeat;
+  background-size: 20px 16px;
+  background-position: center;
 }
