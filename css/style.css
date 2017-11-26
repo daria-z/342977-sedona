@@ -1,5 +1,4 @@
 body {
-
   width: 1200px;
   margin: 0 auto;
   padding: 0;
@@ -20,8 +19,8 @@ body {
   background-color: #ffffff;
 }
 
-.inner-page {
-  background-color: inherit;
+.inner-page .body-back {
+  background-color: #ffffff;
 }
 
 .visually-hidden {
