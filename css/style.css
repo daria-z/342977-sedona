@@ -772,6 +772,23 @@ img.map {
   margin-left: auto;
 }
 
+.sorting-arrows .active-arrow path {
+  fill: #81b3d2;
+}
+
+.sorting-arrows path {
+  fill: #cacaca;
+}
+
+.sorting-arrows:hover path,
+.sorting-arrows:focus path {
+  fill: #231f20;
+}
+
+.sorting-arrows:active path {
+  fill: #81b3d2;
+}
+
 /*выделение жирным и крупным у текста*/
 .selection a {
   color: #000000;
