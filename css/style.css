@@ -162,7 +162,7 @@ a {
 
 .reasons-item {
   width: 33.3%;
-  height: 256px;
+  min-height: 256px;
   background-color: #eeeeee;
 }
 
@@ -197,8 +197,9 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 45px auto 60px;
-
+  height: 100%;
+  padding: 45px 0 60px;
+  box-sizing: border-box;
 }
 
 .reasons-item:first-child .reasons-text,
@@ -342,6 +343,7 @@ a {
 .form-close {
   width: 568px;
   height: 86px;
+  font-weight: 700;
   background-color: #766357;
 }
 
@@ -365,101 +367,164 @@ a {
   position: absolute;
   z-index: 3;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   width: 568px;
-  height: 395px;
+  min-height: 395px;
   margin: 0 auto;
+  padding: 55px;
   background-color: #ffffff;
+  box-sizing: border-box;
 }
 
-/*.reservation-form .wrapper-form  {
-  display: flex;
-  flex-direction: column;
-  margin: 55px;
-  justify-content: space-between;
-  min-width: 460px;
-  min-height: 173px;
-  align-items: flex-start;
-}*/
-
-
-
- .reservation-form .arrival {
+ .reservation-field{
    display: flex;
+   justify-content: space-between;
+   height: 38px;
    margin: 0;
    padding: 0;
  }
 
- .reservation-form .departure {
-   margin: 0;
-   padding: 0;
+ .reservation-field.adults {
+   width: 225px;
  }
 
- .reservation-form .adults {
-   margin: 0;
-   padding: 0;
+ .reservation-field.children {
+   width: 180px;
  }
 
- .reservation-form .children {
-   margin: 0;
-   padding: 0;
+ .reservation-field label {
+   width: 114px;
+   margin: auto;
+   font-size: 14px;
+   line-height: 26px;
+   font-weight: 700;
+   color: #000000;
+   text-align: left;
+   text-transform: uppercase;
+   vertical-align: middle;
+   border: none;
  }
 
-.reservation-form input {
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 700;
-  color: #000000;
-  text-align: left;
-  text-transform: uppercase;
-  vertical-align: middle;
-  border: none;
+ .reservation-field input {
+   padding: 0;
+   font-size: 14px;
+   line-height: 26px;
+   font-weight: 700;
+   color: #000000;
+   text-transform: uppercase;
+   vertical-align: middle;
+   border: none;
+   background-color: #f2f2f2;
+   box-sizing: border-box;
+ }
 
-  background-color: #f2f2f2;
-}
+ .reservation-form input:hover {
+   background-color: #ebebeb;
+ }
 
-.reservation-form input:hover {
-  background-color: #ebebeb;
-}
+ .reservation-field input:focus {
+   border: 2px solid #e5e5e5;
+   background-color: #ffffff;
+ }
 
-.reservation-form input:focus {
-  border: 2px solid #e5e5e5;
-  background-color: #ffffff;
-}
+ .button.choice-button {
+   width: 38px;
+   height: 38px;
+   color: #a9a9a9;
+   text-align: center;
+   vertical-align: middle;
+   background-color: #f2f2f2
+ }
 
-.reservation-form label {
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 700;
-  color: #000000;
-  text-align: left;
-  text-transform: uppercase;
-  vertical-align: middle;
-  border: none;
-}
+ .button.choice-button:hover,
+ .button.choice-button:focus {
+   color: #000000;
+ }
 
-.button.choice-button {
-  color: #a9a9a9;
+ .button.choice-button:active {
+   color: #81b3d2;
+ }
+
+ .reservation-field .calendar-button {
+   position: absolute;
+   right: 55px;
+   width: 38px;
+   height: 38px;
+   background-image: url("../img/calendar.svg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-color: #f2f2f2;
+ }
+
+ .arrival input,
+ .departure input {
+   position: relative;
+   width: 345px;
+   padding-left: 12px;
+   padding-right: 38px;
+   text-align: left;
+ }
+
+
+.adults input {
+  position: relative;
+  z-index: 1;
+  width: 114px;
+  padding-left: 38px;
+  padding-right: 38px;
   text-align: center;
-  vertical-align: middle;
-  background-color: #f2f2f2
 }
 
-.button.choice-button:hover,
-.button.choice-button:focus {
-  color: #000000;
+.adults .red-button {
+  position: absolute;
+  z-index: 2;
+  width: 38px;
+  height: 38px;
+  left: 167px;
 }
 
-.button.choice-button:active {
-  color: #81b3d2;
+.adults .add-button {
+  position: absolute;
+  z-index: 2;
+  width: 38px;
+  height: 38px;
+  left: 240px;
 }
+
+.children input {
+  position: relative;
+  z-index: 1;
+  width: 114px;
+  height: 38px;
+  padding-left: 38px;
+  padding-right: 38px;
+  text-align: center;
+}
+
+.children .red-button {
+  position: absolute;
+  z-index: 2;
+  width: 38px;
+  height: 38px;
+  left: 400px;
+}
+
+.children .add-button {
+  position: absolute;
+  z-index: 2;
+  width: 38px;
+  height: 38px;
+  left: 475px;
+}
+
 
 /*кнопка отправки формы на главной*/
 .form-submit {
   width: 458px;
   height: 58px;
+  font-weight: 700;
   background-color: #81b3d2;
 }
 
@@ -474,7 +539,6 @@ a {
 }
 
 /*карта на главной*/
-
 img.map {
   position: relative;
   z-index: 1;
@@ -519,7 +583,7 @@ img.map {
 }
 
 .filters-fieldset {
-  min-width: 20%;
+  min-width: 241px;
   margin: 0;
   margin-top: auto;
   margin-bottom: auto;
@@ -539,7 +603,7 @@ img.map {
   position: relative;
   display: block;
   cursor: pointer;
-  user-select: none;
+  /*user-select: none;*/
 }
 
 .filters-fieldset .filters-option:last-of-type {
@@ -554,6 +618,7 @@ img.map {
   width: 23px;
   height: 23px;
   background-image: url("../img/checkbox-off.svg");
+  outline-offset: 40px;
 }
 
 .checkbox:checked + label::before {
@@ -750,6 +815,12 @@ img.map {
   margin-bottom: 13px;
 }
 
+.short-description span {
+  display: inline-block;
+  min-width: 110px;
+  margin-right: 6px;
+}
+
 .hotels-text {
   text-align: left;
 }
@@ -767,6 +838,7 @@ a.button-details {
   display: inline-block;
   width: 110px;
   height: 27px;
+  margin-right: 6px;
   padding-top: 3px;
   font-size: 14px;
   line-height: 21px;
@@ -849,7 +921,6 @@ a.button-reservation:active {
   width: 33.3%;
 }
 
-
 .footer-hashtag {
   font-size: 21px;
   line-height: 26px;
@@ -858,44 +929,38 @@ a.button-reservation:active {
 
 .social-list {
   display: flex;
-  justify-content: center;
-  margin: 0;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 150px;
+  height: 48px;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
 }
 
 .social-button {
-  display: inline-block;
+  display: flex;
   width: 46px;
   height: 48px;
-  vertical-align: middle;
-  background-color: #81b3d2;
+  justify-content: center;
+  align-items: center;
   font: inherit;
   color: #ffffff;
   background-color: #81b3d2;
 }
 
-.social-tw {
-  margin-right: 6px;
-  background-image: url("../img/twitter.svg");
-  background-repeat: no-repeat;
-  background-size: 17px 15px;
-  background-position: center;
+.social-button:hover,
+.social-button:focus {
+  background-color: #669ec0;
 }
 
-.social-fb {
-  margin-right: 6px;
-  background-image: url("../img/facebook.svg");
-  background-repeat: no-repeat;
-  background-size: 12px 22px;
-  background-position: center;
+.social-button:active {
+  background-color: #5496bd;
 }
 
-.social-ytb {
-  background-image: url("../img/youtube.svg");
-  background-repeat: no-repeat;
-  background-size: 20px 16px;
-  background-position: center;
+.social-button:active path {
+  opacity: 0.3;
 }
 
 .footer-copyright {
@@ -904,7 +969,16 @@ a.button-reservation:active {
   align-items: center;
 }
 
-.footer-copyright a {
+.footer-copyright .academy-link {
   margin-top: 7px;
   margin-left: 5px;
+}
+
+.academy-link:hover path,
+.academy-link:focus path {
+  fill: #81b3d2;
+}
+
+.academy-link:active path {
+  opacity: 0.3;
 }
