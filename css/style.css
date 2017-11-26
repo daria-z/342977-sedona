@@ -578,7 +578,7 @@ img.map {
 
 .filters legend {
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 30px;
   padding: 0;
   font-size: 16px;
   line-height: 21px;
@@ -588,7 +588,7 @@ img.map {
 .filters-fieldset {
   min-width: 241px;
   margin: 0;
-  margin-top: auto;
+  margin-top: 25px;
   margin-bottom: auto;
   padding: 0;
   text-align: left;
@@ -597,7 +597,7 @@ img.map {
 
 .filters-fieldset .filters-option {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   padding: 0;
   padding-left: 40px;
 }
@@ -637,9 +637,12 @@ img.map {
 
 .wrapper-price {
   margin-left: auto;
-  margin-top: auto;
   margin-bottom: auto;
   width: 320px;
+}
+
+.price legend {
+  margin-bottom: 18px;
 }
 
 .range-box {
@@ -651,6 +654,7 @@ img.map {
   font-size: 0px;
   border: 2px solid #ffffff;
   border-radius: 2px;
+  margin-bottom: 20px;
 }
 
 .range-box::after {
@@ -676,7 +680,7 @@ img.map {
 .range-box .price-max {
   width: 90px;
   text-align: center;
-  padding-left: 65px;
+  padding-left: 55px;
 }
 
 .range-box input {
@@ -688,6 +692,32 @@ img.map {
 
 .range-controls {
   position: relative;
+  margin-bottom: 30px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background-color: #ffffff;
+}
+
+.range-button {
+  position: absolute;
+  top: -9px;
+  cursor: pointer;
+}
+
+.range-button-min {
+  left: 0;
+}
+
+.range-button-max {
+  left: 80%;
 }
 
 .button.filters-button {
