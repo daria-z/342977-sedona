@@ -10,7 +10,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   background-color: #f2f2f2;
-  box-shadow: 0 0 20px #dbdbdb;
+  box-shadow: 0 0 40px 2px #dbdbdb;
 }
 
 .body-back {
@@ -411,17 +411,18 @@ a {
  .reservation-field{
    display: flex;
    justify-content: space-between;
-   height: 38px;
    margin: 0;
    margin-bottom: 30px;
    padding: 0;
  }
 
  .reservation-field.adults {
+   margin-bottom: 54px;
    width: 225px;
  }
 
  .reservation-field.children {
+   margin-bottom: 54px;
    width: 180px;
  }
 
@@ -439,6 +440,7 @@ a {
  }
 
  .reservation-field input {
+   height: 38px;
    padding: 0;
    font-size: 14px;
    line-height: 26px;
@@ -642,7 +644,7 @@ img.map {
   position: relative;
   display: block;
   cursor: pointer;
-  /*user-select: none;*/
+  user-select: none;
 }
 
 .filters-fieldset .filters-option:last-of-type {
@@ -657,7 +659,16 @@ img.map {
   width: 23px;
   height: 23px;
   background-image: url("../img/checkbox-off.svg");
-  outline-offset: 40px;
+}
+
+.checkbox:checked + label::before {
+  content: "";
+  position: absolute;
+  top: -3px;;
+  left: -40px;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-on.svg");
 }
 
 .checkbox:checked + label::before {
@@ -670,6 +681,26 @@ img.map {
   background-image: url("../img/checkbox-on.svg");
 }
 
+.checkbox:disabled + label::before {
+  content: "";
+  position: absolute;
+  top: -3px;;
+  left: -40px;
+  width: 26px;
+  height: 23px;
+  background-image: url("../img/checkbox-off-disabled.svg");
+  background-repeat: no-repeat;
+}
+
+.checkbox:checked:disabled + label::before {
+  content: "";
+  position: absolute;
+  top: -3px;;
+  left: -40px;
+  width: 26px;
+  height: 23px;
+  background-image: url("../img/checkbox-on-disabled.svg");
+}
 
 .wrapper-price {
   margin-left: auto;
