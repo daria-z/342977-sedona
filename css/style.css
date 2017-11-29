@@ -66,7 +66,7 @@ a {
   justify-content: flex-start;
   width: 100%;
   margin: 0;
-  padding: 15px 6% 0px;
+  padding: 14px 6% 0px;
   list-style: none;
 }
 
@@ -100,11 +100,11 @@ a {
 
 .navigation-button:nth-of-type(2) {
   margin-right: auto;
-  padding-left: 25px;
+  padding-left: 30px;
 }
 
 .navigation-button:nth-last-of-type(2) {
-  padding-right: 25px;
+  padding-right: 33px;
 }
 
 .navigation-button:nth-last-of-type(2),
@@ -116,10 +116,10 @@ a {
 .container .welcome {
   position: relative;
   width: 100%;
-  margin-bottom: 45px;
+  margin-bottom: 60px;
   background-color: #2d4448;
   background-image: url("../img/welcome-background.jpg");
-  background-position: top center;
+  background-position: 50% 29%;
   background-repeat: no-repeat;
   background-size: 1200px 800px;
 }
@@ -136,7 +136,7 @@ a {
 }
 
 .welcome .welcome-sedona {
-  margin: 75px 0 82px;
+  margin: 76px 0 74px;
   width: 458px;
   height: 352px;
 }
@@ -148,12 +148,13 @@ a {
 }
 
 .reasons .selection {
+  width: 450px;
   display: inline-block;
-  margin-bottom: 35px;
+  margin-bottom: 16px;
 }
 
 .reasons .subhead {
-  margin-bottom: 52px;
+  margin-bottom: 53px;
 }
 
 .reasons-list {
@@ -200,12 +201,11 @@ a {
 .reasons-item:nth-of-type(2) {
   display: flex;
   width: 100%;
-  height: 256px;
+  min-height: 256px;
   margin: 0;
+  padding: 0;
   background-color: #81b3d2
 }
-
-
 
 .reasons-image:first-of-type {
   width: 67%;
@@ -218,7 +218,7 @@ a {
 .reasons-image:last-of-type {
   width: 67%;
   background-image: url(../img/reasons-item-1.jpg);
-  background-position: left;
+  background-position: left 52%;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -228,7 +228,7 @@ a {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 45px 0 60px;
+  padding: 47px 0 59px;
   box-sizing: border-box;
 }
 
@@ -253,11 +253,18 @@ a {
   padding: 0;
 }
 
+.reasons-item:nth-of-type(1) p {
+  width: 300px;
+}
+
+.reasons-item:nth-of-type(2) p {
+  width: 310px;
+}
+
 .reasons-text p {
-  width: 280px;
+  width: 270px;
   margin: 0 auto;
   padding: 0;
-  /*margin: 0 auto 60px;*/
 }
 
 .recommendations-list {
@@ -276,7 +283,7 @@ a {
   align-items: center;
   width: 33.3%;
   height: 330px;
-  padding: 55px 60px 85px;
+  padding: 55px 60px 82px;
   box-sizing: border-box;
   background-color: #ffffff;
 }
@@ -284,15 +291,15 @@ a {
 .recommendations-item h2 {
   position: relative;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   padding: 0;
 }
 
 .recommendations-item:nth-child(1) h2::before {
   content: "";
   position: absolute;
-  top: -98px;
-  left: -4px;
+  top: -101px;
+  left: -3px;
   width: 75px;
   height: 72px;
   background-image: url("../img/icon-1.svg");
@@ -303,8 +310,8 @@ a {
 .recommendations-item:nth-child(2) h2::before {
   content: "";
   position: absolute;
-  top: -94px;
-  left: -17px;
+  top: -100px;
+  left: -19px;
   width: 74px;
   height: 70px;
   background-image: url("../img/icon-3.svg");
@@ -315,9 +322,9 @@ a {
 .recommendations-item:nth-child(3) h2::before {
   content: "";
   position: absolute;
-  top: -100px;
+  top: -105px;
   width: 64px;
-  left: 19px;
+  left: 21px;
   height: 76px;
   background-image: url("../img/icon-2.svg");
   background-position: bottom;
@@ -325,6 +332,7 @@ a {
 }
 
 .recommendations-item p {
+  width: 300px;
   margin: 0;
   padding: 0;
 }
@@ -339,20 +347,21 @@ a {
   flex-direction: column;
   align-items: center;
   width: auto;
-  height: 245px;
+/*  min-height: 235px;*/
   margin: 0;
   padding: 0;
-  padding-top: 55px;
+  padding-top: 50px;
 }
 
 .reservation-search .question {
   display: inline-block;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .reservation-search p {
   width: 440px;
-  margin: 0 auto 55px;
+  margin: 0 auto 46px;
+  line-height: 24px;
 }
 
 /*стиль для кнопок сайта*/
@@ -398,13 +407,17 @@ a {
   z-index: 3;
   display: flex;
   justify-content: space-between;
-
   flex-wrap: wrap;
   width: 568px;
   min-height: 395px;
   margin: 0 auto;
-  padding: 55px;
+  padding: 53px;
+  padding-top: 55px;
+  padding-left: 55px;
+  padding-right: 55px;
+
   background-color: #ffffff;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
   box-sizing: border-box;
 }
 
@@ -412,22 +425,22 @@ a {
    display: flex;
    justify-content: space-between;
    margin: 0;
-   margin-bottom: 30px;
+   margin-bottom: 27px;
    padding: 0;
  }
 
  .reservation-field.adults {
-   margin-bottom: 54px;
+   margin-bottom: 52px;
    width: 225px;
  }
 
  .reservation-field.children {
-   margin-bottom: 54px;
+   margin-bottom: 52px;
    width: 180px;
  }
 
  .reservation-field label {
-   width: 114px;
+   width: 112px;
    margin: auto;
    font-size: 14px;
    line-height: 26px;
@@ -616,17 +629,18 @@ img.map {
 
 .filters legend {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   padding: 0;
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
 }
 
+
 .filters-fieldset {
-  min-width: 241px;
+  min-width: 255px;
   margin: 0;
-  margin-top: 25px;
+  margin-top: 28px;
   margin-bottom: auto;
   padding: 0;
   text-align: left;
@@ -705,16 +719,18 @@ img.map {
 .wrapper-price {
   margin-left: auto;
   margin-bottom: auto;
+  padding-left: 2px;
   width: 320px;
+  box-sizing: border-box;
 }
 
 .price legend {
-  margin-bottom: 18px;
+  margin-bottom: 9px;
 }
 
 .range-box {
   position: relative;
-  height: 36px;
+  height: 32px;
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
@@ -737,7 +753,7 @@ img.map {
 
 .range-box label {
   display: inline-block;
-  margin-top: 7px;
+  margin-top: 5px;
   font-size: 14px;
   line-height: 21px;
   cursor: pointer;
@@ -765,7 +781,7 @@ input::-webkit-inner-spin-button {
 
 .range-controls {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .range-controls .scale {
@@ -807,8 +823,9 @@ input::-webkit-inner-spin-button {
 
 .button.filters-button {
   display: block;
-  margin: 0 auto;
-  padding: 6px 35px;
+  margin: 0 85px;
+
+  padding: 5px 33px;
   font: inherit;
   color: #ffffff;
   text-align: center;
@@ -816,6 +833,7 @@ input::-webkit-inner-spin-button {
   border: 2px solid #ffffff;
   border-radius: 2px;
   background-color: transparent;
+  box-sizing: border-box;
 }
 
 .button.filters-button:hover,
@@ -831,7 +849,7 @@ input::-webkit-inner-spin-button {
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
-  padding: 30px 6%;
+  padding: 25px 6% 30px;
   width: 100%;
   height: 87px;
   border-bottom: 1px solid #e5e5e5;
@@ -855,6 +873,7 @@ input::-webkit-inner-spin-button {
   justify-content: space-between;
   margin: 0;
   padding: 0;
+  padding-left: 3px;
   width: 240px;
   list-style: none;
 }
@@ -887,9 +906,10 @@ input::-webkit-inner-spin-button {
   margin-left: auto;
 }
 
-/*.arrow .active-arrow path {
-  fill: #81b3d2;
-}*/
+.sorting-arrows a:first-of-type {
+  margin-right: 8px;
+}
+
 
 .arrow path {
   fill: #cacaca;
@@ -953,7 +973,7 @@ input::-webkit-inner-spin-button {
 .short-description span {
   display: inline-block;
   min-width: 110px;
-  margin-right: 6px;
+  margin-right: 2px;
 }
 
 .hotels-text {
@@ -973,7 +993,7 @@ a.button-details {
   display: inline-block;
   width: 110px;
   height: 27px;
-  margin-right: 6px;
+  margin-right: 2px;
   padding-top: 3px;
   font-size: 14px;
   line-height: 21px;
@@ -1030,7 +1050,7 @@ a.button-reservation:active {
 }
 
 .rating-stars img {
-  margin-left: 3px;
+  margin-left: 6px;
 }
 
 
@@ -1041,7 +1061,6 @@ a.button-reservation:active {
   z-index: 5;
   bottom: 0px;
   display: flex;
-  justify-content: space-around;
   align-items: center;
   width: inherit;
   min-height: 120px;
@@ -1057,6 +1076,8 @@ a.button-reservation:active {
 }
 
 .footer-hashtag {
+  padding-left: 6px;
+  box-sizing: border-box;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -1102,11 +1123,13 @@ a.button-reservation:active {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-left: 16px;
+  box-sizing: border-box;
 }
 
 .footer-copyright .academy-link {
-  margin-top: 7px;
-  margin-left: 5px;
+  margin-top: 6px;
+  margin-left: 8px;
 }
 
 .academy-link:hover path,
