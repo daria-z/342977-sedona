@@ -399,12 +399,15 @@ a {
 /*форма на главной*/
 .reservation-search-modal {
   display: flex;
+  margin-left: auto;
   justify-content: center;
 }
 
 .reservation-search-modal .reservation-form {
   position: absolute;
   z-index: 3;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -415,7 +418,6 @@ a {
   padding-top: 55px;
   padding-left: 55px;
   padding-right: 55px;
-
   background-color: #ffffff;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
   box-sizing: border-box;
@@ -465,6 +467,16 @@ a {
    background-color: #f2f2f2;
    box-sizing: border-box;
  }
+
+.reservation-field input[type="number"]::-webkit-outer-spin-button,
+.reservation-field input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.reservation-field input[type="number"] {
+  -moz-appearance: textfield;
+}
 
  .reservation-form input:hover {
    background-color: #ebebeb;
@@ -530,6 +542,8 @@ a {
   padding-right: 38px;
   text-align: center;
 }
+
+
 
 .adults .red-button {
   position: absolute;
@@ -769,14 +783,19 @@ img.map {
 .range-box input {
   width: 50px;
   margin: 0;
+  line-height: inherit;
   background: none;
   border: none;
   }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+.range-box input::-webkit-outer-spin-button,
+.range-box input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.range-box input {
+  -moz-appearance: textfield;
 }
 
 .range-controls {
@@ -1076,7 +1095,8 @@ a.button-reservation:active {
 }
 
 .footer-hashtag {
-  padding-left: 6px;
+  margin: auto 0;
+  padding-left: 4px;
   box-sizing: border-box;
   font-size: 21px;
   line-height: 26px;
@@ -1123,20 +1143,24 @@ a.button-reservation:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 16px;
+  margin: auto 0;
+  padding-left: 9px;
   box-sizing: border-box;
 }
 
 .footer-copyright .academy-link {
-  margin-top: 6px;
-  margin-left: 8px;
+  display: block;
+  width: 120px;
+  height: 50px;
+  margin-left: 11px;
+  background-image: url("../img/html-academy.svg");
 }
 
-.academy-link:hover path,
-.academy-link:focus path {
-  fill: #81b3d2;
+.academy-link:hover,
+.academy-link:focus  {
+  background-image: url("../img/html-academy-hover.svg");
 }
 
-.academy-link:active path {
-  opacity: 0.3;
+.academy-link:active {
+  background-image: url("../img/html-academy-active.svg");
 }
