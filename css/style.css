@@ -453,7 +453,6 @@ a {
  }
 
  .reservation-field.children {
-
    z-index: 1;
    margin-bottom: 52px;
    width: 180px;
@@ -461,7 +460,8 @@ a {
 
  .reservation-field label {
    width: 112px;
-   margin: auto;
+   height: 20px;
+   margin: 5px auto auto;
    font-size: 14px;
    line-height: 26px;
    font-weight: 700;
@@ -484,6 +484,7 @@ a {
    border: none;
    background-color: #f2f2f2;
    box-sizing: border-box;
+
  }
 
 .reservation-field input[type="number"]::-webkit-outer-spin-button,
@@ -496,7 +497,11 @@ a {
   -moz-appearance: textfield;
 }
 
- .reservation-form input:hover {
+.reservation-field input::-ms-clear {
+    display: none;
+}
+
+ .reservation-field input:hover {
    background-color: #ebebeb;
  }
 
@@ -538,7 +543,7 @@ a {
    background-image: url("../img/calendar.svg");
  }
 
-  .reservation-field .calendar-button:active {
+ .reservation-field .calendar-button:active {
    background-image: url("../img/calendar-press.svg");
   }
 
@@ -548,6 +553,7 @@ a {
    padding-left: 12px;
    padding-right: 38px;
    text-align: left;
+
  }
 
 
@@ -556,6 +562,7 @@ a {
   padding-left: 38px;
   padding-right: 38px;
   text-align: center;
+
 }
 
 .adults .red-button {
@@ -575,11 +582,13 @@ a {
 }
 
 .children input {
-  width: 114px;
+  min-width: 114px;
+  max-width: 114px;
   height: 38px;
   padding-left: 38px;
   padding-right: 38px;
   text-align: center;
+
 }
 
 .children .red-button {
@@ -669,11 +678,11 @@ img.map {
 
 .filters-fieldset.infrastructure {
   /*min-width: 255px;*/
-  margin-right: 120px;
+  margin-right: 110px;
 }
 
 .filters-fieldset.type {
-  margin-right: 55px;
+  margin-right: 50px;
 }
 
 .filters-fieldset .filters-option {
@@ -789,19 +798,15 @@ img.map {
 .range-box label {
   width: 50%;
   margin: auto;
-
   font-size: 14px;
   line-height: 21px;
   text-align: right;
   cursor: pointer;
 }
 
-
-
 .range-box input {
-
   width: 50%;
-  margin: 0;
+  margin: 3px 0 auto;
   margin-left: auto;
   line-height: 1;
   background: none;
