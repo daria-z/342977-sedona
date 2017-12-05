@@ -400,6 +400,7 @@ a {
   height: 86px;
   font-weight: 700;
   background-color: #766357;
+  cursor: pointer;
 }
 
 .form-close:hover,
@@ -583,6 +584,7 @@ a {
   text-align: center;
   vertical-align: middle;
   background-color: transparent;
+  cursor: pointer;
  }
 
 .button.choice-button:hover,
@@ -675,6 +677,7 @@ a {
   height: 58px;
   font-weight: 700;
   background-color: #81b3d2;
+  cursor: pointer;
 }
 
 .form-submit:hover,
@@ -767,6 +770,7 @@ a {
   width: 23px;
   height: 23px;
   background-image: url("../img/checkbox-off.svg");
+  cursor: pointer;
 }
 
 .checkbox:checked + label::before {
@@ -857,7 +861,6 @@ a {
   font-size: 14px;
   line-height: 21px;
   text-align: right;
-  cursor: pointer;
 }
 
 .range-box input {
@@ -933,6 +936,7 @@ a {
   border-radius: 2px;
   background-color: transparent;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .button.filters-button:hover,
@@ -997,6 +1001,9 @@ a {
 }
 
 .sorting-item-current a {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
   color: #81b3d2;
   border-bottom: none;
 }
