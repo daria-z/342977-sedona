@@ -715,7 +715,12 @@ a {
   border: 2px solid #ffffff;
   border-radius: 2px;
   background-color: transparent;
+  outline-offset: 20px;
 }
+
+/*.filters input[type="checkbox"] {
+  display: none;
+}*/
 
 .filters legend {
   margin: 0;
@@ -756,6 +761,7 @@ a {
   display: block;
   cursor: pointer;
   user-select: none;
+  outline: none;
 }
 
 .filters-fieldset .filters-option:last-of-type {
@@ -773,6 +779,11 @@ a {
   cursor: pointer;
 }
 
+.checkbox + label:focus::before {
+  outline: thin solid;
+  outline: 5px auto inherit;
+}
+
 .checkbox:checked + label::before {
   content: "";
   position: absolute;
@@ -781,6 +792,7 @@ a {
   width: 23px;
   height: 23px;
   background-image: url("../img/checkbox-on.svg");
+
 }
 
 .checkbox:checked + label::before {
