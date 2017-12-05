@@ -15,6 +15,7 @@ body {
 }
 
 .body-back {
+  position: relative;
   width: 100%;
   background-color: #ffffff;
 }
@@ -415,6 +416,9 @@ a {
 .reservation-search-modal {
   display: flex;
   min-width: 768px;
+  max-width: 1200px;
+  height: 594px;
+  background-image: url("../img/map.png");
 }
 
 .reservation-search-modal .reservation-form {
@@ -437,7 +441,7 @@ a {
   box-sizing: border-box;
 }
 
- .reservation-field{
+ .reservation-field {
    position: relative;
    display: flex;
    justify-content: space-between;
@@ -553,16 +557,13 @@ a {
    padding-left: 12px;
    padding-right: 38px;
    text-align: left;
-
  }
-
 
 .adults input {
   width: 114px;
   padding-left: 38px;
   padding-right: 38px;
   text-align: center;
-
 }
 
 .adults .red-button {
@@ -588,7 +589,6 @@ a {
   padding-left: 38px;
   padding-right: 38px;
   text-align: center;
-
 }
 
 .children .red-button {
@@ -607,7 +607,6 @@ a {
   right: 0px;
 }
 
-
 /*кнопка отправки формы на главной*/
 .form-submit {
   width: 458px;
@@ -624,11 +623,6 @@ a {
 .form-submit:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
-}
-
-/*карта на главной*/
-img.map {
-
 }
 
 /*фильтры в каталоге отелей*/
@@ -1100,14 +1094,13 @@ a.button-reservation:active {
 /*footer*/
 
 .main-footer {
-  z-index: 3;
+  position: relative;
   display: flex;
   align-items: center;
   width: inherit;
   height: 120px;
   margin-top: -120px;
-  background-color: #fefefe;
-  opacity: 0.9;
+  background-color: rgba(255, 254, 254, 0.9);
 }
 
 .inner-page .main-footer {
