@@ -441,6 +441,68 @@ a {
   box-sizing: border-box;
 }
 
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+		transform: translateY(-100%);
+	}
+	50%{
+		transform: translateY(8%);
+	}
+	65%{
+		transform: translateY(-4%);
+	}
+	80%{
+		transform: translateY(4%);
+	}
+	95%{
+		transform: translateY(-2%);
+	}
+	100% {
+    opacity: 1;
+		transform: translateY(0%);
+	}
+}
+
+@keyframes slide-up {
+  0% {
+    opacity: 1;
+		transform: translateY(0%);
+	}
+	50%{
+		transform: translateY(-2%);
+	}
+	65%{
+		transform: translateY(4%);
+	}
+	80%{
+		transform: translateY(-4%);
+	}
+	95%{
+		transform: translateY(8%);
+	}
+	100% {
+    opacity: 0;
+		transform: translateY(2000%);
+	}
+}
+
+.modal-out {
+  animation-name: slide-down;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.modal-in {
+  animation-name: slide-up;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
  .reservation-field {
    position: relative;
    display: flex;
