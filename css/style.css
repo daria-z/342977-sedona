@@ -359,6 +359,7 @@ a {
 }
 
 .reservation-search {
+  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -396,6 +397,7 @@ a {
 
 /*кнопка закрытия/открытия формы на главной странице*/
 .form-close {
+  z-index: 3;
   width: 568px;
   height: 86px;
   font-weight: 700;
@@ -425,7 +427,7 @@ a {
 
 .reservation-search-modal .reservation-form {
   position: absolute;
-  z-index: 3;
+  z-index: 1;
   left: 0;
   right: 0;
   display: flex;
@@ -471,21 +473,21 @@ a {
     opacity: 1;
 		transform: translateY(0%);
 	}
-	50%{
+	25%{
 		transform: translateY(-2%);
 	}
-	65%{
+	40%{
 		transform: translateY(4%);
 	}
-	80%{
+	50%{
 		transform: translateY(-4%);
 	}
-	95%{
+	65%{
 		transform: translateY(8%);
 	}
 	100% {
     opacity: 0;
-		transform: translateY(2000%);
+		transform: translateY(-100%);
 	}
 }
 
