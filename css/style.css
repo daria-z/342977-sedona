@@ -39,6 +39,7 @@ a {
 /*header*/
 .main-navigation {
   position: relative;
+  display: -webkit-box;
   display: flex;
   min-height: 56px;
   margin: 0;
@@ -63,8 +64,10 @@ a {
 }
 
 .site-navigation {
+  display: -webkit-box;
   display: flex;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
   width: 100%;
   margin: 0;
   padding: 14px 6% 0px;
@@ -161,37 +164,45 @@ a {
 }
 
 .reasons-list {
+  display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
   list-style: none;
   background-color: #eeeeee;
 }
 
 .reasons-list .reasons-item:nth-child(1) {
-  order: 1;
+  -webkit-box-ordinal-group: 2;
+          order: 1;
 }
 
 .reasons-list .reasons-item:nth-child(2) {
-  order: 3;
+  -webkit-box-ordinal-group: 4;
+          order: 3;
 }
 
 .reasons-list .reasons-item:nth-child(3) {
-  order: 4;
+  -webkit-box-ordinal-group: 5;
+          order: 4;
 }
 
 .reasons-list .reasons-item:nth-child(4) {
-  order: 5;
+  -webkit-box-ordinal-group: 6;
+          order: 5;
 }
 
 .reasons-list .reasons-item:nth-child(5) {
-  order: 6;
+  -webkit-box-ordinal-group: 7;
+          order: 6;
 }
 
 .reasons-list .recommendations:nth-child(6) {
-  order: 2;
+  -webkit-box-ordinal-group: 3;
+          order: 2;
 }
 
 .reasons-item {
@@ -202,6 +213,7 @@ a {
 
 .reasons-item:nth-of-type(1),
 .reasons-item:nth-of-type(2) {
+  display: -webkit-box;
   display: flex;
   width: 100%;
   min-height: 256px;
@@ -229,9 +241,13 @@ a {
 }
 
 .reasons-text {
+  display: -webkit-box;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
   align-content: center;
   height: 100%;
   padding: 0;
@@ -288,8 +304,10 @@ a {
 }
 
 .recommendations-list {
+  display: -webkit-box;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
   min-height: 330px;
   width: 100%;
   margin: 0;
@@ -301,8 +319,11 @@ a {
 
 .recommendations-item {
   position: relative;
+  display: -webkit-box;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
   flex-wrap: wrap;
   width: 33.3%;
   min-width: 256px;
@@ -357,9 +378,13 @@ a {
 
 .reservation-search {
   z-index: 2;
+  display: -webkit-box;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
   width: auto;
   margin: 0;
   padding: 0;
@@ -414,6 +439,7 @@ a {
 
 /*форма на главной*/
 .reservation-search-modal {
+  display: -webkit-box;
   display: flex;
   min-width: 768px;
   max-width: 1200px;
@@ -427,8 +453,10 @@ a {
   z-index: 1;
   left: 0;
   right: 0;
+  display: -webkit-box;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
   flex-wrap: wrap;
   width: 568px;
   min-height: 395px;
@@ -442,56 +470,127 @@ a {
   box-sizing: border-box;
 }
 
-@keyframes slide-down {
+@-webkit-keyframes slide-down {
   0% {
     opacity: 0;
-    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
   }
   50% {
-    transform: translateY(8%);
+    -webkit-transform: translateY(8%);
+            transform: translateY(8%);
   }
   65% {
-    transform: translateY(-4%);
+    -webkit-transform: translateY(-4%);
+            transform: translateY(-4%);
 	}
   80% {
-    transform: translateY(4%);
+    -webkit-transform: translateY(4%);
+            transform: translateY(4%);
   }
   95% {
-    transform: translateY(-2%);
+    -webkit-transform: translateY(-2%);
+            transform: translateY(-2%);
   }
   100% {
     opacity: 1;
-    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  50% {
+    -webkit-transform: translateY(8%);
+            transform: translateY(8%);
+  }
+  65% {
+    -webkit-transform: translateY(-4%);
+            transform: translateY(-4%);
+	}
+  80% {
+    -webkit-transform: translateY(4%);
+            transform: translateY(4%);
+  }
+  95% {
+    -webkit-transform: translateY(-2%);
+            transform: translateY(-2%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes slide-up {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  25%{
+    -webkit-transform: translateY(-2%);
+            transform: translateY(-2%);
+  }
+  40%{
+    -webkit-transform: translateY(4%);
+            transform: translateY(4%);
+  }
+  50%{
+    -webkit-transform: translateY(-4%);
+            transform: translateY(-4%);
+  }
+  65%{
+    -webkit-transform: translateY(8%);
+            transform: translateY(8%);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
   }
 }
 
 @keyframes slide-up {
   0% {
     opacity: 1;
-    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
   }
   25%{
-    transform: translateY(-2%);
+    -webkit-transform: translateY(-2%);
+            transform: translateY(-2%);
   }
   40%{
-    transform: translateY(4%);
+    -webkit-transform: translateY(4%);
+            transform: translateY(4%);
   }
   50%{
-    transform: translateY(-4%);
+    -webkit-transform: translateY(-4%);
+            transform: translateY(-4%);
   }
   65%{
-    transform: translateY(8%);
+    -webkit-transform: translateY(8%);
+            transform: translateY(8%);
   }
   100% {
     opacity: 0;
-    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
   }
 }
 
-@keyframes shake {
+@-webkit-keyframes shake {
   0%,
   100% {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 
   10%,
@@ -499,41 +598,81 @@ a {
   50%,
   70%,
   90% {
-    transform: translateX(-10px);
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(10px);
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
 }
 
 .modal-out {
-  animation-name: slide-down;
-  animation-duration: 1s;
-  animation-direction: alternate;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  -webkit-animation-name: slide-down;
+          animation-name: slide-down;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .modal-in {
-  animation-name: slide-up;
-  animation-duration: 1s;
-  animation-direction: alternate;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  -webkit-animation-name: slide-up;
+          animation-name: slide-up;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .modal-error {
-  animation: shake 0.6s;
+  -webkit-animation: shake 0.6s;
+          animation: shake 0.6s;
 }
 
 .reservation-field {
   position: relative;
+  display: -webkit-box;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
   margin: 0;
   margin-bottom: 27px;
   padding: 0;
@@ -717,8 +856,10 @@ a {
 
 /*фильтры в каталоге отелей*/
 .filters {
+  display: -webkit-box;
   display: flex;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
   width: 100%;
   min-height: 217px;
   padding-left: 6%;
@@ -786,7 +927,10 @@ a {
   position: relative;
   display: block;
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   outline: none;
 }
 
@@ -856,9 +1000,13 @@ a {
 }
 
 .wrapper-price {
+  display: -webkit-box;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: center;
+          justify-content: center;
   margin-left: auto;
   margin-bottom: auto;
   max-width: 317px;
@@ -872,6 +1020,7 @@ a {
 
 .range-box {
   position: relative;
+  display: -webkit-box;
   display: flex;
   width: 100%;
   height: 36px;
@@ -893,7 +1042,8 @@ a {
   width: 2px;
   height: 22px;
   background-color: #ffffff;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .range-box label {
@@ -992,9 +1142,12 @@ a {
 
 /*сортировка в каталоге отелей*/
 .sorting {
+  display: -webkit-box;
   display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: baseline;
+          align-items: baseline;
   padding: 25px 6% 30px;
   width: 100%;
   height: 87px;
@@ -1015,8 +1168,10 @@ a {
 }
 
 .sorting-list {
+  display: -webkit-box;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
   margin: 0;
   padding: 0;
   padding-left: 3px;
@@ -1094,8 +1249,10 @@ a {
 }
 
 .hotels-item {
+  display: -webkit-box;
   display: flex;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
 
   padding: 30px 6%;
   width: 100%;
@@ -1133,9 +1290,13 @@ a {
 }
 
 .hotels-raiting {
+  display: -webkit-box;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
   margin-left: auto;
   text-align: right;
 }
@@ -1211,8 +1372,10 @@ a.button-reservation:active {
 
 .main-footer {
   position: relative;
+  display: -webkit-box;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+          align-items: center;
   width: inherit;
   height: 120px;
   margin-top: -120px;
@@ -1237,9 +1400,12 @@ a.button-reservation:active {
 }
 
 .social-list {
+  display: -webkit-box;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
   flex-wrap: wrap;
   width: 150px;
   height: 48px;
@@ -1249,11 +1415,14 @@ a.button-reservation:active {
 }
 
 .social-button {
+  display: -webkit-box;
   display: flex;
   width: 46px;
   height: 48px;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
   font: inherit;
   color: #ffffff;
   background-color: #81b3d2;
@@ -1273,9 +1442,12 @@ a.button-reservation:active {
 }
 
 .footer-copyright {
+  display: -webkit-box;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
   margin: auto 0;
   padding-left: 9px;
   box-sizing: border-box;
