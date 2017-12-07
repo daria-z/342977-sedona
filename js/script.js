@@ -11,6 +11,7 @@ close.addEventListener("click", function(){
 })
 modal.classList.remove("modal-in")
 close.addEventListener("click", function(){
+  modal.classList.remove("modal-error");
   modal.classList.toggle("modal-in");
 })
 modal.addEventListener("submit", function (evt){
@@ -18,7 +19,6 @@ modal.addEventListener("submit", function (evt){
     evt.preventDefault();
     console.log("Нужно ввести логин и пароль");
     modal.classList.remove("modal-error");
-      modal.offsetWidth = modal.offsetWidth;
     modal.classList.add("modal-error");
   }
 })
